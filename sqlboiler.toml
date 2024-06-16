@@ -1,0 +1,13 @@
+output   = "./api/repository/sqlboiler"
+wipe     = true
+pkgname  = "sqlboiler"
+no-tests = true
+
+[psql]
+  user = "postgres"
+  dbname = "employee_management"
+  host   = "localhost"
+  port   = 5432
+  pass   = "pwd123"
+  sslmode = "disable"
+  blacklist = ["schema_migrations"]
